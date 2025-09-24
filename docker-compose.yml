@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+    whatsapp-bot:
+        build: .
+        container_name: whatsapp-anti-spam-bot
+        restart: unless-stopped
+        volumes:
+            - ./auth_state:/app/auth_state
+        environment:
+            - NODE_ENV=production
+            - TZ=Asia/Jerusalem
+        stdin_open: true
+        tty: true

@@ -1,0 +1,7 @@
+{
+	"permissions": {
+		"allow": ["WebFetch(domain:baileys.wiki)", "WebSearch"],
+		"deny": [],
+		"ask": []
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"name": "whatsapp-anti-spam-bot",
+	"version": "1.0.0",
+	"type": "module",
+	"main": "index.ts",
+	"scripts": {
+		"start": "bun index.ts",
+		"dev": "bun --watch index.ts",
+		"typecheck": "bunx tsc --noEmit",
+		"lint": "bunx biome check .",
+		"lint:fix": "bunx biome check . --write",
+		"format": "bunx biome format . --write"
+	},
+	"dependencies": {
+		"baileys": "^7.0.0-rc.3",
+		"pino": "^8.15.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.2.4",
+		"@types/bun": "latest"
+	},
+	"private": true,
+	"peerDependencies": {
+		"typescript": "^5"
+	}
+}
